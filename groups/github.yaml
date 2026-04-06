@@ -1,0 +1,12 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format/#kind-group
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: admin
+  description: Backstage Admin
+spec:
+  type: admin
+  profile:
+    displayName: Admin
+  members: [user:zleetch]

@@ -1,0 +1,30 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nexus
+  description: Nexus
+  links:
+    - url: https://github.com/zltch/nexus
+      title: Github Repository
+      icon: code
+spec:
+  type: website
+  lifecycle: development
+  owner: group:admin
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: nexus-catalog
+  description: Nexus Catalog
+  links:
+    - url: https://github.com/zltch/nexus-catalog
+      title: Github Repository
+      icon: code
+spec:
+  type: catalog
+  lifecycle: development
+  owner: group:admin
+  dependencyOf:
+    - component:nexus
