@@ -5,4 +5,4 @@ kind: User
 metadata:
   name: zleetch
 spec:
-  memberOf: [group:admin, group:infrastructure]
+  memberOf: [group:github/admin, group:github/infrastructure]
