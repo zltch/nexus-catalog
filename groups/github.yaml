@@ -4,11 +4,37 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: admin
-  namespace: github
   description: Backstage Admin
 spec:
   type: admin
   profile:
     displayName: Admin
   members: [user:zleetch]
+  children: [group:infrastructure, group:site-reliability]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: infrastructure
+  description: Infrastructure Team
+spec:
+  type: infra
+  profile:
+    displayName: Infrastructure
+  members: [user:zleetch]
+  children: [group:site-reliability]
+  parent: [group:admin]
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: site-reliability
+  description: Site Reliability Engineer
+spec:
+  type: infra
+  profile:
+    displayName: Site Reliability
+  members: []
   children: []
+  parent: [group:infrastructure]
