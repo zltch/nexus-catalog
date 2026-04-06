@@ -1,4 +1,3 @@
-# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-user
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -6,3 +5,10 @@ metadata:
   name: zleetch
 spec:
   memberOf: [group:github/admin, group:github/infrastructure]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: testing
+spec:
+  memberOf: [group:github/admin]
