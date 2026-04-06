@@ -10,5 +10,5 @@ spec:
   type: admin
   profile:
     displayName: Admin
-  members: [user:github/zleetch]
+  members: [user:zleetch]
   children: []

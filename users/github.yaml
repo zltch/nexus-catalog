@@ -4,6 +4,5 @@ apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
   name: zleetch
-  namespace: github
 spec:
   memberOf: [group:github/admin]
