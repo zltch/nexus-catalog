@@ -4,9 +4,10 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: admin
+  namespace: github
   description: Backstage Admin
 spec:
   type: admin
   profile:
     displayName: Admin
-  members: [user:zleetch]
+  members: [user:github/zleetch]
