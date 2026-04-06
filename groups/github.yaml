@@ -11,3 +11,4 @@ spec:
   profile:
     displayName: Admin
   members: [user:github/zleetch]
+  children: []
