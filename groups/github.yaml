@@ -9,22 +9,8 @@ spec:
   type: admin
   profile:
     displayName: Admin
-  members: [user:default/zleetch]
-  children: [group:github/infrastructure, group:github/site-reliability]
----
-apiVersion: backstage.io/v1alpha1
-kind: Group
-metadata:
-  name: infrastructure
-  namespace: github
-  description: Infrastructure Team
-spec:
-  type: infra
-  profile:
-    displayName: Infrastructure
-  members: [user:default/zleetch]
-  children: [group:github/site-reliability]
-  parent: [group:github/admin]
+  members: []
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -38,4 +24,16 @@ spec:
     displayName: Site Reliability
   members: []
   children: []
-  parent: [group:github/infrastructure]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: infrastructure
+  namespace: github
+  description: Infrastructure Team
+spec:
+  type: infra
+  profile:
+    displayName: Infrastructure
+  members: []
+  children: [group:github/site-reliability]
