@@ -2,6 +2,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  annotations:
+    github.com/project-slug: zltch/nexus
+    github.com/team-slug: group:github/admin
   name: nexus
   namespace: nexus
   description: Nexus
@@ -17,6 +20,9 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+  annotations:
+    github.com/project-slug: zltch/nexus-catalog
+    github.com/team-slug: group:github/admin
   name: nexus-catalog
   namespace: nexus
   description: Nexus Catalog
