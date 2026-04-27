@@ -6,7 +6,7 @@ metadata:
     github.com/project-slug: zltch/nexus
     github.com/team-slug: group:github/admin
     backstage.io/kubernetes-id: nexus
-    backstage.io/kubernetes-label-selector: 'component=kube-scheduler'
+    backstage.io/kubernetes-label-selector: 'tier=control-plane'
     backstage.io/kubernetes-cluster: minikube
   name: nexus
   namespace: nexus
